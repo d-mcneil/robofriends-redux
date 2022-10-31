@@ -5,6 +5,7 @@ import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import ErrorBoundary from "../components/ErrorBoundary";
+import Header from "../components/Header";
 
 const mapStateToProps = (state) => ({
   searchfield: state.searchRobots.searchfield,
@@ -55,7 +56,7 @@ const App = ({
 
   return (
     <div className="tc">
-      <h1 className="f2">RoboFriends</h1>
+      <Header />
       {renderRobots}
     </div>
   );
